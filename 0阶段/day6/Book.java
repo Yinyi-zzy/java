@@ -1,0 +1,32 @@
+
+public class Book
+{
+	private String name;
+	private String author;
+	private double price;
+
+	public Book( String name,String author,double price){
+	this.name=name;
+	this.author=author;
+	this.price=price;
+	}
+
+	public void showInfo(){		//方法后面带（）括号
+	System.out.println("书名："+name+"，作者："+author+"，价格："+price+"元");//book类内部不需要传参，可直接读取数据，不需要get
+	}
+	
+	public String getName(){
+		return name;
+	}
+	public String getAuthor(){
+		return author;   
+	}
+
+	public double getPrice(){
+		return price;
+	}
+
+	public void setPrice(double price){
+		this.price=price;
+	}
+}

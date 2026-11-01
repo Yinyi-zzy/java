@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+public class Library{
+	private ArrayList<Book>books;
+		
+	public Library(){
+		
+	books = new ArrayList<>();
+	}
+
+	public void addBook(Book book ){
+		boos.add(book);
+		System.out.println("添加成功");
+	}
+
+	public void showAllBooks(){
+		if(books.)
+	
+	}
+
+}
