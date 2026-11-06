@@ -1,0 +1,22 @@
+public class ShapeTest{
+	public static void main(String[]args){
+		Circle circle=new Cirle(5.0);
+		Rectangle rect=new Rectangle(4.0,6.0);
+
+		circle.showInfo();
+		rect.showInfo();
+
+		System.out.println("圆的周长"+circle.getCircumference());
+		System.out.println("矩形的周长"+rect.getPerimeter());
+
+		Shape[]shapes={circle,rect};
+		System.out.println("\n遍历所有形状");
+
+		//	变量s，类型为shape，需要和数组内成员类型一样
+		//         ：代表in 后面的shapes是循环的范围
+		for(Shape s:shapes){  //增强for循环，拿不到下标，若需要下标，需要用普通for循环
+			s.showInfo();
+			}
+		}
+
+}

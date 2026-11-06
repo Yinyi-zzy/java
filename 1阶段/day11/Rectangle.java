@@ -1,0 +1,19 @@
+public class Rectangle extends Shape{
+	private double width;
+	private double height;
+
+public Rectangle(double width,double height){
+		super("矩形");
+		this.width=width;
+		this.height=height;
+		}
+	@Override
+	public double getArea(){
+		return width * height;
+		}
+	
+	public double getPerimeter(){
+		return 2*(width +height);
+		}
+	
+}
